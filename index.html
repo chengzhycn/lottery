@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>抽奖啦~</title>
+  </head>
+  <body>
+    <div class="bg-img">
+      <div id="title">
+        <h1>抽 奖 啦 ~</h1>
+      </div>
+      <div id="prize">
+        <font color="red">
+          <span id="prize-name"></span>
+        </font>
+      </div>
+      <div id="box">
+        <button type="button" id="start">开始</button>
+        <button type="button" id="pause">停止</button>
+      </div>
+    </div>
+    <audio id="bgm" src="./static/background.mp3" loop></audio>
+  </body>
+  <script src="./renderer.js"></script>
+</html>
